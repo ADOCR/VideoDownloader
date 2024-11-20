@@ -6,32 +6,28 @@ import tkinter as tk
 from tkinter import messagebox, ttk, filedialog
 
 # Verificar e instalar librerías necesarias
-def verificar_librerias(librerias):
-    faltantes = []
+def verificar_e_instalar_librerias(librerias):
+    """
+    Verifica e instala las librerías necesarias.
+    """
     for libreria in librerias:
         try:
             __import__(libreria)
         except ImportError:
-            faltantes.append(libreria)
-
-    if faltantes:
-        print(f"Instalando librerías faltantes: {faltantes}")
-        for libreria in faltantes:
+            print(f"{libreria} no está instalada. Instalando...")
             try:
                 subprocess.check_call([sys.executable, "-m", "pip", "install", libreria])
-                print(f"Librería {libreria} instalada correctamente.")
+                print(f"{libreria} instalada correctamente.")
             except subprocess.CalledProcessError as e:
                 print(f"Error al instalar {libreria}: {e}")
                 messagebox.showerror("Error", f"Error al instalar la librería: {libreria}")
-                return False
-    return True
+                sys.exit(1)
 
-
-# Dependencias requeridas
+# Lista de dependencias necesarias
 librerias_requeridas = ["yt_dlp", "pydub", "torch", "demucs"]
 
-if not verificar_librerias(librerias_requeridas):
-    sys.exit("No se pudieron instalar las dependencias necesarias.")
+# Verificar e instalar dependencias
+verificar_e_instalar_librerias(librerias_requeridas)
 
 # Importar librerías después de la verificación
 from pydub import AudioSegment
@@ -39,12 +35,11 @@ import yt_dlp as youtube_dl
 from demucs import pretrained
 from demucs.apply import apply_model
 
-
 class VideoDownloader:
     def __init__(self, root):
         self.root = root
         self.root.title("Descargador de Videos")
-        self.root.geometry("400x400")
+        self.root.geometry("400x450")
         self.root.configure(bg="#e6e6e6")
 
         # Título
@@ -104,35 +99,81 @@ class VideoDownloader:
         elif d['status'] == 'finished':
             self.progress['value'] = 100
             self.root.update_idletasks()
-            messagebox.showinfo("Descarga completada", f"El archivo se ha guardado en la carpeta:\n{self.download_folder}")
-
-            # Convertir a MP3 si se seleccionó la opción
+    
+            # Obtener la ruta del archivo descargado
+            downloaded_file = d['filename']
+            converted_file = None
+    
+            # Mostrar mensaje de descarga completada
+            messagebox.showinfo("Descarga completada", f"El archivo se ha descargado en:\n{downloaded_file}")
+    
+            # Convertir a MP3 si está habilitada la opción
             if self.convert_to_mp3.get():
-                self.convert_to_mp3_file(d['filename'])
-
-            # Separar pistas si se seleccionó la opción
+                converted_file = self.convert_to_mp3_file(downloaded_file)
+    
+            # Separar pistas usando el archivo convertido (si existe) o el archivo descargado
             if self.separar_pistas.get():
-                self.separar_pistas_audio(d['filename'])
+                file_to_process = converted_file if converted_file else downloaded_file
+                self.separar_pistas_audio(file_to_process)
+
+    def update_progress_conversion(self, percentage):
+        """Actualiza la barra de progreso durante la conversión."""
+        self.progress['value'] = percentage
+        self.root.update_idletasks()
 
     def convert_to_mp3_file(self, video_file):
         try:
+            # Leer el archivo de entrada usando AudioSegment
             audio = AudioSegment.from_file(video_file)
             mp3_file = os.path.splitext(video_file)[0] + ".mp3"
+    
+            # Exportar como MP3
             audio.export(mp3_file, format="mp3")
+    
+            # Actualizar barra de progreso al 100%
+            self.progress['value'] = 100
+            self.root.update_idletasks()
+    
             messagebox.showinfo("Conversión completada", f"El archivo se ha convertido a MP3:\n{mp3_file}")
+            return mp3_file  # Devolver la ruta del archivo convertido
         except Exception as e:
             messagebox.showerror("Error de conversión", f"Hubo un problema al convertir el archivo a MP3:\n{e}")
+            return None
 
     def separar_pistas_audio(self, audio_file):
         try:
-            device = "cuda" if torch.cuda.is_available() else "cpu"
-            model = pretrained.get_model('htdemucs').to(device)
+            # Verificar que el archivo convertido existe
+            if not os.path.exists(audio_file):
+                raise FileNotFoundError(f"El archivo {audio_file} no existe o no es accesible.")
+    
+            # Directorio de salida para pistas separadas
             output_dir = os.path.join(self.download_folder, "separated")
             os.makedirs(output_dir, exist_ok=True)
-
-            print(f"Separando pistas de: {audio_file}")
-            apply_model(model, audio_file, output_dir, device=device)
+    
+            # Comando para ejecutar Demucs con salida personalizada
+            command = [
+                "demucs",
+                "-d", "cuda" if torch.cuda.is_available() else "cpu",  # Usar GPU si está disponible
+                "--out", output_dir,  # Especificar carpeta de salida
+                audio_file
+            ]
+    
+            # Ejecutar el comando de Demucs
+            print(f"Ejecutando Demucs para separar pistas de: {audio_file}")
+            subprocess.run(command, check=True, text=True)
+    
+            # Verificar si los archivos fueron creados
+            if not os.listdir(output_dir):  # Comprueba si la carpeta está vacía
+                raise RuntimeError(f"Las pistas no se generaron en la carpeta esperada: {output_dir}")
+    
+            # Confirmación al usuario
             messagebox.showinfo("Separación completada", f"Las pistas separadas se han guardado en:\n{output_dir}")
+        except FileNotFoundError as e:
+            messagebox.showerror("Error de separación", f"Archivo no encontrado: {e}")
+        except subprocess.CalledProcessError as e:
+            messagebox.showerror("Error de separación", f"Error al ejecutar Demucs:\n{e}")
+        except RuntimeError as e:
+            messagebox.showerror("Error de separación", f"{e}")
         except Exception as e:
             messagebox.showerror("Error de separación", f"Hubo un problema al separar las pistas:\n{e}")
 
@@ -158,11 +199,8 @@ class VideoDownloader:
         except Exception as e:
             messagebox.showerror("Error de descarga", f"Hubo un problema al descargar el video:\n{e}")
 
+            # Crear la ventana principal
+root = tk.Tk()
+app = VideoDownloader(root)
+root.mainloop()
 
-# Crear la ventana principal
-root = tk.Tk()
-app = VideoDownloader(root)
-root.mainloop()
-root = tk.Tk()
-app = VideoDownloader(root)
-root.mainloop()
