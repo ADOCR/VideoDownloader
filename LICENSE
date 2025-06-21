@@ -1,117 +1,77 @@
-LICENCIA MIT-CR-ADONIS v1.1  
-Fecha de emisión: 20 jun 2025 (actualizada)  
+HIPPOCRATIC-CR-ADONIS License v1.0  
+Fecha de emisión: 20 de junio de 2025  
 
-────────────────────────────────────────────────────────────────────────
-1. DEFINICIONES
-   1.1 «Software» significa el programa informático identificado como
-       “VideoDownloader” (código, recursos, documentación y cualquier
-       actualización o modificación autorizada) EXCLUYENDO los
-       Componentes de Terceros definidos en el Artículo 11.
-   1.2 «Usuario» es toda persona física que obtenga una copia legítima
-       del Software.
-   1.3 «Uso Personal, Educativo o de Investigación No Comercial»
-       comprende actividades privadas o académicas en las que no media
-       contraprestación económica directa ni indirecta.
-   1.4 «Obra Derivada» es toda modificación, adaptación o trabajo basado
-       en el Software.
 
-────────────────────────────────────────────────────────────────────────
-2. CONCESIÓN LIMITADA DE LICENCIA
-   Se concede al Usuario un derecho mundial, libre de regalías pero NO
-   exclusivo, para instalar y ejecutar el Software exclusivamente con
-   fines de Uso Personal, Educativo o de Investigación No Comercial,
-   sujeto a las restricciones establecidas en la presente Licencia.
+────────────────────────────────────────────────────────────────────────  
+### PREÁMBULO  
+El Titular (Adonis) desea que el Software se use sólo de manera ética, en contextos pacíficos y respetuosos de los derechos humanos, académicos y culturales de Costa Rica.  
 
-────────────────────────────────────────────────────────────────────────
-3. RESTRICCIONES ESPECÍFICAS
-   3.1 **No Comercialización.**  Se prohíbe vender, alquilar, arrendar,
-       sublicenciar, distribuir o explotar comercialmente el Software o
-       cualquier Obra Derivada *salvo lo dispuesto en el Artículo 11*.
-   3.2 **No Uso Bélico.**  Se prohíbe utilizar el Software, directa o
-       indirectamente, en:
-       a) Conflictos armados, operaciones militares o paramilitares.  
-       b) Desarrollo, prueba o despliegue de armas o logística militar.
-   3.3 **No Vigilancia Masiva.**  Prohibido el uso para recolección o
-       agregación de datos personales a gran escala sin consentimiento
-       informado y verificable de los titulares de los datos.
-   3.4 **No Apropiación de Patrimonio Cultural.**  Vetado el uso en
-       proyectos que impliquen excavación, análisis o explotación de
-       patrimonio arqueológico, cultural o biológico o
-       indígena sin autorización institucional y consulta previa,
-       libre e informada a las comunidades afectadas.
-   3.5 **Entidades Restringidas.**  Bloqueado el uso por agencias
-       gubernamentales, militares, de inteligencia o corporativas
-       extranjeras, salvo licencia expresa firmada por el Titular.
-   3.6 **Redistribución de Obras Derivadas.**  Toda Obra Derivada que se
-       comparta públicamente deberá:  
-       i.   Incluir íntegra esta Licencia.  
-       ii.  Describir los cambios realizados.  
-       iii. Mantener los avisos de copyright y atribución.  
-       *Lo anterior no limita los derechos sobre Componentes de Terceros
-       conforme al Artículo 11.*
-   3.7 **Uso Académico.**  Cualquier publicación, presentación o tesis
-       basada en resultados obtenidos con el Software deberá citarlo
-       conforme a APA 7ª ed. u otra norma equivalente.
+────────────────────────────────────────────────────────────────────────  
+### 1. DEFINICIONES  
+1.1 **Software.** El programa “VideoDownloader” (código fuente, documentación y cualquier versión autorizada), **excluyendo** los Componentes de Terceros del Art. 11.  
+1.2 **Usuario.** Persona física que obtenga una copia legítima del Software.  
+1.3 **Uso Ético Permitido.** Uso personal, educativo, de investigación no comercial, o artístico, que no viole Derechos Humanos, leyes nacionales o acuerdos internacionales.  
+1.4 **Obra Derivada.** Toda adaptación, traducción, port o trabajo basado en el Software.  
 
-────────────────────────────────────────────────────────────────────────
-4. MODIFICACIONES
-   El Usuario puede modificar el Software solo para los fines permitidos
-   en la cláusula 2.  El Software modificado continúa regido por esta
-   misma Licencia.
+────────────────────────────────────────────────────────────────────────  
+### 2. CONCESIÓN DE LICENCIA  
+Se concede al Usuario un derecho mundial, gratuito y no exclusivo, para usar, ejecutar y crear Obras Derivadas del Software, **sólo** para Uso Ético Permitido, sujeto a esta licencia.
 
-────────────────────────────────────────────────────────────────────────
-5. ATRIBUCIÓN
-   Debe conservarse esta Licencia, el aviso de copyright y toda mención
-   de autoría en cada copia o porción sustancial del Software.
+────────────────────────────────────────────────────────────────────────  
+### 3. PROHIBICIONES DE USO  
+El Software **no** podrá usarse para:  
+- a) Conflictos armados, operaciones militares o paramilitares.  
+- b) Diseño, prueba o despliegue de armas, sistemas de adquisición de blancos o logística militar.  
+- c) Vigilancia masiva o recolección de datos personales sin consentimiento informado y verificable.  
+- d) Violación o apropiación del patrimonio arqueológico, cultural o biológico de Costa Rica o comunidades indígenas sin consulta libre e informada.  
+- e) Publicidad de discursos de odio, terrorismo o violaciones de derechos fundamentales.  
+- f) Cualquier actividad contraria a las leyes de Costa Rica o tratados de derechos humanos.  
 
-────────────────────────────────────────────────────────────────────────
-6. RENUNCIA DE GARANTÍAS
-   EL SOFTWARE SE PROPORCIONA «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO,
-   EXPRESA NI IMPLÍCITA, INCLUYENDO, PERO NO LIMITADA A, GARANTÍAS DE
-   COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR O
-   NO INFRACCIÓN. EN NINGÚN CASO EL TITULAR SERÁ RESPONSABLE DE DAÑOS
-   DIRECTOS, INDIRECTOS, INCIDENTALES O CONSECUENCIALES QUE SURJAN DEL
-   USO O IMPOSIBILIDAD DE USO DEL SOFTWARE.
+────────────────────────────────────────────────────────────────────────  
+### 4. OBLIGACIONES DEL USUARIO  
+4.1 **Atribución.** Conservar este aviso y el copyright (c) 2025 Adonis en todas las copias.  
+4.2 **Transparencia Académica.** En trabajos derivados de investigaciones o publicaciones, citar el Software conforme a APA 7ª ed. u otra norma equivalente.  
+4.3 **Informe de Uso.** Si el Software se emplea en estudios formales (tesis, proyectos institucionales), el Usuario deberá notificar por escrito al Titular su contexto de uso y conclusiones principales.  
 
-────────────────────────────────────────────────────────────────────────
-7. TERMINACIÓN
-   El incumplimiento de cualquiera de las cláusulas anula de pleno
-   derecho esta Licencia. El Usuario deberá eliminar todas las copias
-   del Software en su poder y cesar su uso inmediatamente.
+────────────────────────────────────────────────────────────────────────  
+### 5. MODIFICACIONES Y DISTRIBUCIÓN  
+5.1 Las Obras Derivadas para Uso Ético Permitido pueden redistribuirse sólo si:  
+  - Incluyen íntegra esta licencia.  
+  - Detallan los cambios realizados.  
+  - Conservan los avisos de copyright.  
+  - Respetan las Prohibiciones de Uso (Art. 3).  
+5.2 **No Comercialización.** Está prohibida la venta, sublicencia o explotación comercial de este Software o sus Obras Derivadas sin autorización expresa del Titular.
 
-────────────────────────────────────────────────────────────────────────
-8. LEGISLACIÓN Y JURISDICCIÓN
-   Esta Licencia se interpreta conforme a la Ley de Derechos de Autor y
-   Derechos Conexos de la República de Costa Rica (Ley N.º 6683) y demás
-   normativa aplicable. Para toda controversia se someten las partes a
-   la jurisdicción exclusiva de los tribunales de San José, Costa Rica.
+────────────────────────────────────────────────────────────────────────  
+### 6. COMPONENTES DE TERCEROS  
+6.1 El Software incorpora bibliotecas y ejecutables de terceros (“Componentes”) bajo licencias abiertas (p. ej. MIT, BSD-2/3, LGPL, Unlicense).  
+6.2 Esta licencia **no** modifica los derechos otorgados por esos Componentes.  
+6.3 Al redistribuir el Software junto con Componentes, el Usuario debe:  
+  a) Respetar íntegramente sus licencias originales.  
+  b) Conservar sus avisos de copyright y licencia.  
+6.4 Si se redistribuye binarios de (L)GPL, el Usuario facilitará acceso al código fuente conforme a la (L)GPL aplicable.
 
-────────────────────────────────────────────────────────────────────────
-9. CLÁUSULA DE SEPARABILIDAD
-   Si un tribunal declara nula alguna disposición, las restantes
-   conservarán su plena vigencia, ajustándose la cláusula afectada para
-   reflejar la intención original.
+────────────────────────────────────────────────────────────────────────  
+### 7. RENUNCIA DE GARANTÍAS  
+EL SOFTWARE SE PROPORCIONA “TAL CUAL”, SIN GARANTÍA DE NINGÚN TIPO. EL TITULAR NO SERÁ RESPONSABLE DE DAÑOS DERIVADOS DEL USO O IMPOSIBILIDAD DE USO.
 
-────────────────────────────────────────────────────────────────────────
-10. CONTACTO PARA LICENCIAS COMERCIALES
-    Para solicitar permisos distintos a los aquí contemplados,
-    comuníquese con: adonis.dev@example.com
+────────────────────────────────────────────────────────────────────────  
+### 8. TERMINACIÓN  
+El incumplimiento de cualquier cláusula anula de pleno derecho esta licencia. El Usuario deberá eliminar todas las copias del Software y Obras Derivadas de su posesión.
 
-────────────────────────────────────────────────────────────────────────
-11. COMPONENTES DE TERCEROS
-    11.1 El Software depende de bibliotecas y ejecutables de terceros
-         («Componentes») distribuidos bajo licencias abiertas
-         (MIT, BSD-2/3, LGPL 2.1+, The Unlicense u otras).  
-    11.2 Nada en esta Licencia limitará, modificará ni anulará los
-         derechos otorgados por tales Componentes.  
-    11.3 Cuando el Usuario redistribuya el Software junto con
-         Componentes, deberá:  
-         a) Respetar íntegramente las condiciones de sus licencias.  
-         b) Conservar los avisos de copyright y licencia de cada
-            Componente.  
-    11.4 Si algún Componente se distribuye bajo (L)GPL y se redistribuye
-         en forma binaria, el Usuario deberá facilitar acceso al código
-         fuente de dicho Componente conforme a la (L)GPL aplicable.
+────────────────────────────────────────────────────────────────────────  
+### 9. LEGISLACIÓN Y JURISDICCIÓN  
+Esta licencia se rige por la Ley de Derechos de Autor y Derechos Conexos (Ley N.º 6683) de la República de Costa Rica. Para toda disputa, las partes se someten a los tribunales de San José, Costa Rica.
 
-────────────────────────────────────────────────────────────────────────
-FIN DE LA LICENCIA
+────────────────────────────────────────────────────────────────────────  
+### 10. CLÁUSULA DE SEPARABILIDAD  
+Si una disposición es inválida, las demás permanecen vigentes y se ajustarán para conservar la intención original.
+
+────────────────────────────────────────────────────────────────────────  
+### 11. CONTACTO  
+Para permisos comerciales o consultas legales:  
+adonis.dev@example.com
+
+────────────────────────────────────────────────────────────────────────  
+FIN DE LICENCIA  
+
