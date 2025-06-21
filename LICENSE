@@ -1,0 +1,117 @@
+LICENCIA MIT-CR-ADONIS v1.1  
+Fecha de emisión: 20 jun 2025 (actualizada)  
+
+────────────────────────────────────────────────────────────────────────
+1. DEFINICIONES
+   1.1 «Software» significa el programa informático identificado como
+       “VideoDownloader” (código, recursos, documentación y cualquier
+       actualización o modificación autorizada) EXCLUYENDO los
+       Componentes de Terceros definidos en el Artículo 11.
+   1.2 «Usuario» es toda persona física que obtenga una copia legítima
+       del Software.
+   1.3 «Uso Personal, Educativo o de Investigación No Comercial»
+       comprende actividades privadas o académicas en las que no media
+       contraprestación económica directa ni indirecta.
+   1.4 «Obra Derivada» es toda modificación, adaptación o trabajo basado
+       en el Software.
+
+────────────────────────────────────────────────────────────────────────
+2. CONCESIÓN LIMITADA DE LICENCIA
+   Se concede al Usuario un derecho mundial, libre de regalías pero NO
+   exclusivo, para instalar y ejecutar el Software exclusivamente con
+   fines de Uso Personal, Educativo o de Investigación No Comercial,
+   sujeto a las restricciones establecidas en la presente Licencia.
+
+────────────────────────────────────────────────────────────────────────
+3. RESTRICCIONES ESPECÍFICAS
+   3.1 **No Comercialización.**  Se prohíbe vender, alquilar, arrendar,
+       sublicenciar, distribuir o explotar comercialmente el Software o
+       cualquier Obra Derivada *salvo lo dispuesto en el Artículo 11*.
+   3.2 **No Uso Bélico.**  Se prohíbe utilizar el Software, directa o
+       indirectamente, en:
+       a) Conflictos armados, operaciones militares o paramilitares.  
+       b) Desarrollo, prueba o despliegue de armas o logística militar.
+   3.3 **No Vigilancia Masiva.**  Prohibido el uso para recolección o
+       agregación de datos personales a gran escala sin consentimiento
+       informado y verificable de los titulares de los datos.
+   3.4 **No Apropiación de Patrimonio Cultural.**  Vetado el uso en
+       proyectos que impliquen excavación, análisis o explotación de
+       patrimonio arqueológico, cultural o biológico costarricense o
+       indígena sin autorización institucional y consulta previa,
+       libre e informada a las comunidades afectadas.
+   3.5 **Entidades Restringidas.**  Bloqueado el uso por agencias
+       gubernamentales, militares, de inteligencia o corporativas
+       extranjeras, salvo licencia expresa firmada por el Titular.
+   3.6 **Redistribución de Obras Derivadas.**  Toda Obra Derivada que se
+       comparta públicamente deberá:  
+       i.   Incluir íntegra esta Licencia.  
+       ii.  Describir los cambios realizados.  
+       iii. Mantener los avisos de copyright y atribución.  
+       *Lo anterior no limita los derechos sobre Componentes de Terceros
+       conforme al Artículo 11.*
+   3.7 **Uso Académico.**  Cualquier publicación, presentación o tesis
+       basada en resultados obtenidos con el Software deberá citarlo
+       conforme a APA 7ª ed. u otra norma equivalente.
+
+────────────────────────────────────────────────────────────────────────
+4. MODIFICACIONES
+   El Usuario puede modificar el Software solo para los fines permitidos
+   en la cláusula 2.  El Software modificado continúa regido por esta
+   misma Licencia.
+
+────────────────────────────────────────────────────────────────────────
+5. ATRIBUCIÓN
+   Debe conservarse esta Licencia, el aviso de copyright y toda mención
+   de autoría en cada copia o porción sustancial del Software.
+
+────────────────────────────────────────────────────────────────────────
+6. RENUNCIA DE GARANTÍAS
+   EL SOFTWARE SE PROPORCIONA «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO,
+   EXPRESA NI IMPLÍCITA, INCLUYENDO, PERO NO LIMITADA A, GARANTÍAS DE
+   COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR O
+   NO INFRACCIÓN. EN NINGÚN CASO EL TITULAR SERÁ RESPONSABLE DE DAÑOS
+   DIRECTOS, INDIRECTOS, INCIDENTALES O CONSECUENCIALES QUE SURJAN DEL
+   USO O IMPOSIBILIDAD DE USO DEL SOFTWARE.
+
+────────────────────────────────────────────────────────────────────────
+7. TERMINACIÓN
+   El incumplimiento de cualquiera de las cláusulas anula de pleno
+   derecho esta Licencia. El Usuario deberá eliminar todas las copias
+   del Software en su poder y cesar su uso inmediatamente.
+
+────────────────────────────────────────────────────────────────────────
+8. LEGISLACIÓN Y JURISDICCIÓN
+   Esta Licencia se interpreta conforme a la Ley de Derechos de Autor y
+   Derechos Conexos de la República de Costa Rica (Ley N.º 6683) y demás
+   normativa aplicable. Para toda controversia se someten las partes a
+   la jurisdicción exclusiva de los tribunales de San José, Costa Rica.
+
+────────────────────────────────────────────────────────────────────────
+9. CLÁUSULA DE SEPARABILIDAD
+   Si un tribunal declara nula alguna disposición, las restantes
+   conservarán su plena vigencia, ajustándose la cláusula afectada para
+   reflejar la intención original.
+
+────────────────────────────────────────────────────────────────────────
+10. CONTACTO PARA LICENCIAS COMERCIALES
+    Para solicitar permisos distintos a los aquí contemplados,
+    comuníquese con: adonis.dev@example.com
+
+────────────────────────────────────────────────────────────────────────
+11. COMPONENTES DE TERCEROS
+    11.1 El Software depende de bibliotecas y ejecutables de terceros
+         («Componentes») distribuidos bajo licencias abiertas
+         (MIT, BSD-2/3, LGPL 2.1+, The Unlicense u otras).  
+    11.2 Nada en esta Licencia limitará, modificará ni anulará los
+         derechos otorgados por tales Componentes.  
+    11.3 Cuando el Usuario redistribuya el Software junto con
+         Componentes, deberá:  
+         a) Respetar íntegramente las condiciones de sus licencias.  
+         b) Conservar los avisos de copyright y licencia de cada
+            Componente.  
+    11.4 Si algún Componente se distribuye bajo (L)GPL y se redistribuye
+         en forma binaria, el Usuario deberá facilitar acceso al código
+         fuente de dicho Componente conforme a la (L)GPL aplicable.
+
+────────────────────────────────────────────────────────────────────────
+FIN DE LA LICENCIA
