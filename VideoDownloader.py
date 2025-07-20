@@ -62,7 +62,7 @@ class VideoDownloader(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Descargador de Videos Mejorado")
-        self.geometry("540x590")
+        self.geometry("560x625")
         self.configure(bg="#f7f7f7")
         self.protocol("WM_DELETE_WINDOW", self.on_close)
 
@@ -70,8 +70,6 @@ class VideoDownloader(tk.Tk):
         self.download_folder = None
         self.is_processing = False
         self.cancel_event = threading.Event()
-
-        # Modelo Demucs (lazy loading)
         self.demucs_model = None
 
         self.build_ui()
@@ -94,8 +92,12 @@ class VideoDownloader(tk.Tk):
 
         # Opciones
         lf = ttk.LabelFrame(frame, text="Opciones"); lf.pack(fill="x", pady=10)
-        self.var_mp3 = tk.BooleanVar(); ttk.Checkbutton(lf, text="Convertir a MP3", variable=self.var_mp3).pack(anchor="w")
-        self.var_sep = tk.BooleanVar(); ttk.Checkbutton(lf, text="Separar pistas (Demucs)", variable=self.var_sep).pack(anchor="w")
+        self.var_mp3 = tk.BooleanVar()
+        ttk.Checkbutton(lf, text="Convertir a MP3", variable=self.var_mp3).pack(anchor="w")
+        self.var_sep = tk.BooleanVar()
+        ttk.Checkbutton(lf, text="Separar pistas (Demucs)", variable=self.var_sep).pack(anchor="w")
+        self.keep_original = tk.BooleanVar(value=True)
+        ttk.Checkbutton(lf, text="Conservar archivo original", variable=self.keep_original).pack(anchor="w")
 
         # Estado
         self.lbl_status = ttk.Label(frame, text="Listo"); self.lbl_status.pack(pady=5)
@@ -205,7 +207,9 @@ class VideoDownloader(tk.Tk):
         dst = src.with_suffix(".mp3")
         try:
             AudioSegment.from_file(src).export(dst, format="mp3", bitrate="320k")
-            src.unlink()  # Elimina el original sólo si la conversión fue exitosa
+            # Solo borra el original si el usuario lo decidió
+            if not self.keep_original.get():
+                src.unlink()
         except Exception as e:
             raise Exception("Error al convertir a MP3: " + str(e))
         print(f"Archivo MP3 generado: {dst}")  # Debug
