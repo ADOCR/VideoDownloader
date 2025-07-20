@@ -80,7 +80,8 @@
 
 ## Historial de Cambios
 ### v2.2 (2025‑07‑20)
-
+- **Nueva Licencia:** Se adopta la **HIPPOCRATIC-CR-ADOCR License v1.0** (20 de junio de 2025), que restringe el uso del software únicamente a fines éticos, educativos y culturales de acuerdo a la legislación costarricense y estándares internacionales de derechos humanos.  
+- El archivo LICENSE contiene el texto completo de la nueva licencia.
 - **Robustez en nombres de archivo:** elimina caracteres problemáticos y previene errores por rutas inválidas.
 - **Verificación de existencia** antes de conversión a MP3 para evitar errores si el archivo no está presente.
 - **Mensajes de depuración (debug prints)** muestran la ruta real de descarga y conversión.
