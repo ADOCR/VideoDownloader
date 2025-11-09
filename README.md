@@ -4,7 +4,7 @@
 
 - Interfaz nativa y ligera (Tkinter + ttk).
 - Descarga robusta mediante **yt-dlp**, compatible con streams HLS/fragmentados.
-- Proceso en **segundo plano** con threading: la UI nunca se congela.
+- Proceso en **segundo plano** con threading: la UI nunca se congela (eso quisiera) :V .
 - **Botón Cancelar** que detiene cualquier paso (descarga, conversión, separación) de inmediato y seguro.
 - **Chequeo de FFmpeg** y dependencias al iniciar, instalación automática si falta algo.
 - **Logs de errores** en `app.log` para fácil depuración.
